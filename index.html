@@ -2123,28 +2123,28 @@
           });
         }
 
-        // Adjust Image Height
         var sliderImages = document.querySelectorAll(".image-6");
-        if (window.innerWidth > 1700) {
+
+        function adjustImageSize() {
           sliderImages.forEach((img) => {
-            img.style.height = "100px"; // Set height for desktops
-            img.style.objectFit = "cover"; // Prevents distortion
-            img.style.width = "100%"; // Ensures full width
+            if (window.innerWidth > 1699) {
+              img.style.height = "900px";  // Set height for large screens
+            } else if (window.innerWidth > 1024) {
+              img.style.height = "600px";  // Set height for medium screens
+            } else {
+              img.style.height = "200px";  // Set height for small screens
+            }
+            img.style.objectFit = "cover";  // Prevents distortion and ensures image fills the container
+            img.style.width = "100%";  // Ensures image takes full width of the screen/container
           });
         }
-        else if (window.innerWidth > 1024) {
-          sliderImages.forEach((img) => {
-            img.style.height = "600px"; // Set height for desktops
-            img.style.objectFit = "cover"; // Prevents distortion
-            img.style.width = "100%"; // Ensures full width
-          });
-        } else {
-          sliderImages.forEach((img) => {
-            img.style.height = "200px";
-            img.style.objectFit = "cover";
-            img.style.width = "100%";
-          });
-        }
+        
+        // Call function initially
+        adjustImageSize();
+        
+        // Add event listener to adjust images on window resize
+        window.addEventListener("resize", adjustImageSize);
+        
 
         // Adjust Button Position
         var radioBtns = document.getElementById("radioBtns");
