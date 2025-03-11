@@ -1714,13 +1714,13 @@
         const sliderImages = document.querySelectorAll(".slider img");
     
         if (slider) {
-            slider.style.width = "100vw"; // Ensure slider is full width
-            slider.style.maxWidth = "100vw";
+            slider.style.width = "90vw"; // Ensure slider is full width
+            slider.style.maxWidth = "90vw";
         }
     
         sliderImages.forEach((img) => {
-            img.style.width = "100vw"; // Ensures full width
-            img.style.maxWidth = "100vw"; // Prevents restrictions from parent divs
+            img.style.width = "90vw"; // Ensures full width
+            img.style.maxWidth = "90vw"; // Prevents restrictions from parent divs
             img.style.objectFit = "cover"; // Ensures image fills container
     
             if (window.innerWidth > 1699) {
