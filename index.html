@@ -2100,63 +2100,6 @@
         relatedEl.appendTo($(this));
       });
     </script>
-
-    <!-- <script>
-      function applyAdjustments() {
-        // Adjust Text Color
-        var heading = document.querySelector(".heading-3");
-        var textSpans = document.querySelectorAll(".text-span, .text-span-2");
-        var paragraph = document.querySelector(".p1");
-
-        if (window.innerWidth > 1024) {
-          // Apply white color for desktops
-          heading.style.color = "white";
-          paragraph.style.color = "white";
-          textSpans.forEach((span) => {
-            span.style.color = "white";
-          });
-        } else {
-          // Apply black color for smaller screens
-          heading.style.color = "black";
-          paragraph.style.color = "black";
-          textSpans.forEach((span) => {
-            span.style.color = "black";
-          });
-        }
-
-        // Adjust Image Height
-        var sliderImages = document.querySelectorAll(".image-6");
-        if (window.innerWidth > 1024) {
-          sliderImages.forEach((img) => {
-            img.style.height = "600px"; // Set height for desktops
-            img.style.objectFit = "cover"; // Prevents distortion
-            img.style.width = "100%"; // Ensures full width
-          });
-        } else {
-          sliderImages.forEach((img) => {
-            img.style.height = "200px";
-            img.style.objectFit = "cover";
-            img.style.width = "100%";
-          });
-        }
-
-        // Adjust Button Position
-        var radioBtns = document.getElementById("radioBtns");
-        if (radioBtns) {
-          if (window.innerWidth > 1024) {
-            radioBtns.style.position = "relative";
-            radioBtns.style.top = "-300px";
-          } else {
-            radioBtns.style.position = "";
-            radioBtns.style.top = "";
-          }
-        }
-      }
-
-      // Run function on page load and resize
-      window.onload = applyAdjustments;
-      window.onresize = applyAdjustments;
-    </script> -->
     <script>
       function applyAdjustments() {
         // Adjust Text Color
@@ -2181,20 +2124,27 @@
         }
 
         // Adjust Image Height
-        //var sliderImages = document.querySelectorAll(".image-6");
-        //if (window.innerWidth > 1024) {
-        //  sliderImages.forEach((img) => {
-          //  img.style.height = "600px"; // Set height for desktops
-        //    img.style.objectFit = "cover"; // Prevents distortion
-        //    img.style.width = "100%"; // Ensures full width
-        //  });
-       // } else {
-       //   sliderImages.forEach((img) => {
-       //     img.style.height = "200px";
-       //     img.style.objectFit = "cover";
-         //   img.style.width = "100%";
-        //  });
-      //  }
+        var sliderImages = document.querySelectorAll(".image-6");
+        if (window.innerWidth > 1700) {
+          sliderImages.forEach((img) => {
+            img.style.height = "100px"; // Set height for desktops
+            img.style.objectFit = "cover"; // Prevents distortion
+            img.style.width = "100%"; // Ensures full width
+          });
+        }
+        else if (window.innerWidth > 1024) {
+          sliderImages.forEach((img) => {
+            img.style.height = "600px"; // Set height for desktops
+            img.style.objectFit = "cover"; // Prevents distortion
+            img.style.width = "100%"; // Ensures full width
+          });
+        } else {
+          sliderImages.forEach((img) => {
+            img.style.height = "200px";
+            img.style.objectFit = "cover";
+            img.style.width = "100%";
+          });
+        }
 
         // Adjust Button Position
         var radioBtns = document.getElementById("radioBtns");
