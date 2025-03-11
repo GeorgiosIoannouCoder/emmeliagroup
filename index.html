@@ -1710,24 +1710,35 @@
       var sliderImages = document.querySelectorAll(".image-6");
 
       function adjustImageSize() {
+        const slider = document.querySelector(".slider"); // Ensure slider container takes full width
+        const sliderImages = document.querySelectorAll(".slider img");
+    
+        if (slider) {
+            slider.style.width = "100vw"; // Ensure slider is full width
+            slider.style.maxWidth = "100vw";
+        }
+    
         sliderImages.forEach((img) => {
-          if (window.innerWidth > 1699) {
-            img.style.height = "700px"; // Set height for large screens
-          } else if (window.innerWidth > 1024) {
-            img.style.height = "500px"; // Set height for medium screens
-          } else {
-            img.style.height = "600px"; // Set height for small screens
-          }
-          img.style.objectFit = "cover"; // Prevents distortion and ensures image fills the container
-          img.style.width = "100%"; // Ensures image takes full width of the screen/container
+            img.style.width = "100vw"; // Ensures full width
+            img.style.maxWidth = "100vw"; // Prevents restrictions from parent divs
+            img.style.objectFit = "cover"; // Ensures image fills container
+    
+            if (window.innerWidth > 1699) {
+                img.style.height = "700px"; // Large screens
+            } else if (window.innerWidth > 1024) {
+                img.style.height = "500px"; // Medium screens
+            } else {
+                img.style.height = "600px"; // Small screens
+            }
         });
-      }
+    }
 
       // Call function initially
       adjustImageSize();
 
       // Add event listener to adjust images on window resize
       window.addEventListener("resize", adjustImageSize);
+      window.addEventListener("load", adjustImageSize);
     </script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
