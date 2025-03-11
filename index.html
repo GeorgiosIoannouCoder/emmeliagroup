@@ -1723,9 +1723,9 @@
             img.style.maxWidth = "90vw"; // Prevents restrictions from parent divs.
             img.style.objectFit = "cover"; // Ensures image fills container.
     
-            if (window.innerWidth > 1300) {
-              img.style.height = "400px"; // Larger screens.
-          } else if (window.innerWidth > 1024) {
+            if (window.innerWidth > 2000) {
+              img.style.height = "300px"; // Larger screens.
+          } else if (window.innerWidth > 1300) {
               img.style.height = "550px"; // Medium screens.
           } else {
               img.style.height = "600px"; // Smaller screens.
@@ -1749,8 +1749,11 @@
           const element = document.getElementById("class_3");
       
           if (!element) return; // Exit if the element is not found.
-      
-          if (window.innerWidth > 768) {
+
+          if (window.innerWidth > 2000) {
+            element.style.marginTop = "100px"; // Larger screens.
+          }
+          else if (window.innerWidth > 1300) {
               element.style.marginTop = "270px"; // Larger screens.
           } else {
               element.style.marginTop = "50px"; // Smaller screens.
