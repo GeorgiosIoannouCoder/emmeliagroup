@@ -1723,8 +1723,8 @@
             img.style.maxWidth = "90vw"; // Prevents restrictions from parent divs.
             img.style.objectFit = "cover"; // Ensures image fills container.
     
-            if (window.innerWidth > 2000) {
-              img.style.height = "1px"; // Larger screens.
+            if (window.innerWidth > 1644) {
+              img.style.height = "300px"; // Larger screens.
           } else if (window.innerWidth > 1300) {
               img.style.height = "550px"; // Medium screens.
           } else {
@@ -1750,8 +1750,8 @@
       
           if (!element) return; // Exit if the element is not found.
 
-          if (window.innerWidth > 2000) {
-            element.style.marginTop = "1px"; // Larger screens.
+          if (window.innerWidth > 1644) {
+            element.style.marginTop = "100px"; // Larger screens.
           }
           else if (window.innerWidth > 1300) {
               element.style.marginTop = "270px"; // Larger screens.
