@@ -1714,26 +1714,24 @@
         const sliderImages = document.querySelectorAll(".slider img");
     
         if (slider) {
-            slider.style.width = "90vw"; // Ensure slider is full width
+            slider.style.width = "90vw"; // Ensure slider is full width.
             slider.style.maxWidth = "90vw";
         }
     
         sliderImages.forEach((img) => {
-            img.style.width = "90vw"; // Ensures full width
-            img.style.maxWidth = "90vw"; // Prevents restrictions from parent divs
-            img.style.objectFit = "cover"; // Ensures image fills container
+            img.style.width = "90vw"; // Ensures full width.
+            img.style.maxWidth = "90vw"; // Prevents restrictions from parent divs.
+            img.style.objectFit = "cover"; // Ensures image fills container.
     
-            if (window.innerWidth > 1300) {
-                img.style.height = "400px"; // Large screens
-            } else if (window.innerWidth > 1024) {
-                img.style.height = "550px"; // Medium screens
+            if (window.innerWidth > 1024) {
+                img.style.height = "550px"; // Larger screens.
             } else {
-                img.style.height = "600px"; // Small screens
+                img.style.height = "600px"; // Smaller screens.
             }
         });
     }
 
-      // Call function initially
+      // Call function initially.
       adjustImageSize();
 
       // Add event listener to adjust images on window resize
@@ -1748,14 +1746,12 @@
       function adjustMarginTop() {
           const element = document.getElementById("class_3");
       
-          if (!element) return; // Exit if the element is not found
+          if (!element) return; // Exit if the element is not found.
       
-          if (window.innerWidth > 1300) {
-              element.style.marginTop = "70px"; // Large screens
-          } else if (window.innerWidth > 768) {
-              element.style.marginTop = "270px"; // Tablets
+          if (window.innerWidth > 768) {
+              element.style.marginTop = "270px"; // Larger screens.
           } else {
-              element.style.marginTop = "50px"; // Mobile screens
+              element.style.marginTop = "50px"; // Smaller screens.
           }
       }
       
