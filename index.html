@@ -692,7 +692,7 @@
         </div>
       </div>
     </div>
-    <div class="_3" style="margin-top: 250px">
+    <div class="_3" id= "class_3">
       <div class="container">
         <div class="companies2_inner _57">
           <p
@@ -1743,5 +1743,26 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
+    <script>
+      function adjustMarginTop() {
+          const element = document.getElementById("class_3");
+      
+          if (!element) return; // Exit if the element is not found
+      
+          if (window.innerWidth > 1699) {
+              element.style.marginTop = "100px"; // Large screens
+          } else if (window.innerWidth > 768) {
+              element.style.marginTop = "270px"; // Tablets
+          } else {
+              element.style.marginTop = "50px"; // Mobile screens
+          }
+      }
+      
+      // Run on page load and window resize
+      window.addEventListener("load", adjustMarginTop);
+      window.addEventListener("resize", adjustMarginTop);
+      </script>
+      
   </body>
 </html>
