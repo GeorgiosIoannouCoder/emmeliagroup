@@ -562,10 +562,10 @@
         </div>
       </div>
     </div>
-    <div class="_5" style="height: 350px">
-      <div class="container"style="height: 350px">
-        <div class="_5_inner"style="height: 350px">
-          <div style="width: 100%"style="height: 350px">
+    <div id="dynamicDiv" class="_5">
+      <div class="container">
+        <div class="_5_inner">
+          <div style="width: 100%">
             <div
               id="w-node-_89fae181-2709-4e24-b3c4-0adb689b434f-fcc5f33f"
               class="grid-left"
@@ -582,7 +582,7 @@
                 data-nav-spacing="3"
                 data-duration="1500"
                 data-infinite="true"
-                fs-cmsslider-element="slider"style="height: 350px"
+                fs-cmsslider-element="slider"
               >
                 <div class="mask w-slider-mask">
                   <div class="slide w-slide"></div>
@@ -631,12 +631,12 @@
                 </div>
                 <div class="slide-nav w-slider-nav w-round w-num"></div>
               </div>
-              <div class="hide"style="height: 350px">
-                <div class="w-dyn-list"style="height: 350px">
+              <div class="hide">
+                <div class="w-dyn-list">
                   <div
                     fs-cmsslider-element="list"
                     role="list"
-                    class="collection-list-2 w-dyn-items"style="height: 350px"
+                    class="collection-list-2 w-dyn-items"
                   >
                     <div role="listitem" class="w-dyn-item">
                       <img
@@ -1747,7 +1747,17 @@
             img.style.width = "90vw"; // Ensures full width.
             img.style.maxWidth = "90vw"; // Prevents restrictions from parent divs.
             //img.style.objectFit = "cover"; // Ensures image fills container.
-            img.style.height = "350px"
+            if (window.innerWidth > 1644) { // Larger screens.
+              img.style.height = "400px";
+          } else if (window.innerWidth > 1300) { // Medium screens.
+              img.style.height = "550px";
+          }else if (window.innerWidth > 900) { // Medium screens.
+            img.style.height = "320px";
+        } else if (window.innerWidth > 400) { // Medium screens.
+          img.style.height = "250px";
+      }else {
+              img.style.height = "300px"; // Smaller screens.
+          }
         });
     }
 
@@ -1755,8 +1765,37 @@
       adjustImageSize();
 
       // Add event listener to adjust images on window resize
-      //window.addEventListener("resize", adjustImageSize);
       window.addEventListener("load", adjustImageSize);
+      //window.addEventListener("resize", adjustImageSize);
+    </script>
+    <script>
+      function adjustDivHeight() {
+        const elements = document.querySelectorAll("#dynamicDiv");
+    
+        let newHeight;
+        
+        if (window.innerWidth > 1644) {
+            newHeight = "400px"; 
+        } else if (window.innerWidth > 1300) {
+            newHeight = "550px"; 
+        } else if (window.innerWidth > 900) {
+            newHeight = "320px"; 
+        } else if (window.innerWidth > 400) {
+            newHeight = "250px"; 
+        } else {
+            newHeight = "300px"; 
+        }
+    
+        elements.forEach((el) => {
+            el.style.height = newHeight;
+        });
+    }
+    
+    // Run function initially and on window resize
+    adjustDivHeight();
+    window.addEventListener("resize", adjustDivHeight);
+    window.addEventListener("load", adjustDivHeight);
+    
     </script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
