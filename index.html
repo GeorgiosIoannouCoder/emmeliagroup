@@ -1755,8 +1755,8 @@
             img.style.height = "320px";
         } else if (window.innerWidth > 400) { // Medium screens.
           img.style.height = "250px";
-      }else {
-              img.style.height = "300px"; // Smaller screens.
+      }else {// Smaller screens.
+              img.style.height = "300px"; 
           }
         });
     }
@@ -1774,15 +1774,15 @@
     
         let newHeight;
         
-        if (window.innerWidth > 1644) {
+        if (window.innerWidth > 1644) {// Larger screens.
             newHeight = "650px"; 
-        } else if (window.innerWidth > 1300) {
+        } else if (window.innerWidth > 1300) {// Medium screens.
             newHeight = "550px"; 
-        } else if (window.innerWidth > 900) {
+        } else if (window.innerWidth > 900) {// Medium screens.
             newHeight = "320px"; 
-        } else if (window.innerWidth > 400) {
+        } else if (window.innerWidth > 400) {// Medium screens.
             newHeight = "250px"; 
-        } else {
+        } else {// Smaller screens.
             newHeight = "300px"; 
         }
     
@@ -1811,7 +1811,7 @@
             element.style.marginTop = "100px"; // Larger screens.
           }
           else if (window.innerWidth > 1300) {
-              element.style.marginTop = "50px"; // Larger screens.
+              element.style.marginTop = "50px"; // Medium screens.
           } else {
               element.style.marginTop = "50px"; // Smaller screens.
           }
