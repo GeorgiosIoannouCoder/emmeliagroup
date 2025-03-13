@@ -672,7 +672,7 @@
                         src="./images/events/heart_proposal.jpg"
                         class="image-6"
                       />
-                      <div class="slider-text">A Heart Wedding Proposal to impress your beloved</div>
+                      <a href="./events/" class="slider-button" >A Heart Wedding Proposal to impress your beloved</a>
                     </div>
                     <div role="listitem" class="w-dyn-item">
                       <img
@@ -682,7 +682,7 @@
                         src="./images/events/wedding.jpg"
                         class="image-6"
                       />
-                      <div class="slider-text">A Wedding Arch to celebrate unforgetable moments</div>
+                      <a href="./events/" class="slider-button" >A Wedding Arch to celebrate unforgetable moments</a>
                     </div>
                     <div role="listitem" class="w-dyn-item">
                       <img
@@ -692,7 +692,7 @@
                         src="./images/hospitality/emmelia_rooms.png"
                         class="image-6"
                       />
-                      <div class="slider-text">Condo Hotel with Rooms designed to relax</div>
+                      <a href="./hospitality/" class="slider-button" >Condo Hotel with Rooms designed to relax</a>
                     </div>
                     <div role="listitem" class="w-dyn-item">
                       <img
@@ -702,7 +702,7 @@
                         src="./images/hospitality/emmelia_studios.png"
                         class="image-6"
                       />
-                      <div class="slider-text">Studios offering awesome short-term accomondation</div>
+                      <a href="./hospitality/" class="slider-button" >Studios offering awesome short-term accomondation</a>
                     </div>
                     <div role="listitem" class="w-dyn-item">
                       <img
@@ -712,7 +712,7 @@
                         src="./images/advertising/led_screen.png"
                         class="image-6"
                       />
-                      <div class="slider-text">Digital Advertising in the heart of Paphos</div>
+                      <a href="./advertising/" class="slider-button" >Digital Advertising in the heart of Paphos</a>
                     </div>
                   </div>
                 </div>
@@ -724,7 +724,7 @@
     </div>
 
 
-    <style>      
+    <!-- <style>      
       /* Styles for the text overlay */
       .slider-text {
         position: absolute;
@@ -734,15 +734,72 @@
         background: rgba(0, 0, 0, 0.6);
         color: white;
         padding: 15px 20px;
-        font-size: 20px;
         font-weight: bold;
         text-align: center;
         border-radius: 10px;
         width: 80%;
         max-width: 600px;
-      }
-    </style>
+    }
     
+    /* Larger screens (desktops) */
+    @media screen and (min-width: 1200px) {
+        .slider-text {
+            font-size: 24px;
+        }
+    }
+    
+    /* Medium screens (tablets) */
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+        .slider-text {
+            font-size: 18px;
+        }
+    }
+    
+    /* Small screens (mobile) */
+    @media screen and (max-width: 767px) {
+        .slider-text {
+            font-size: 14px;
+        }
+    }
+    
+    </style> -->
+
+    <style>      
+      /* Styles for the transparent, rounded button */
+      .slider-button {
+          position: absolute;
+          bottom: 10%;
+          left: 50%;
+          transform: translateX(-50%);
+          color: white;
+          padding: 15px 25px;
+          text-align: center;
+          border-radius: 50px;
+          text-decoration: none;
+          display: inline-block;
+          border: 1.3px solid white; /* White border */
+          transition: all 0.3s ease-in-out;
+          background: rgba(0, 0, 0, 0.2);
+          /*background: transparent; */
+      }
+  
+      /* Hover effect: Background turns white, text turns black */
+      .slider-button:hover {
+          background: white; /* White background */
+          color: black; /* Black text */
+          border-color: white; /* Keeps the border white */
+      }
+  
+      /* Ensure button adapts well on mobile */
+      @media screen and (max-width: 767px) {
+          .slider-button {
+              font-size: 14px;
+              padding: 12px 20px;
+          }
+      }
+</style>
+
+
     <div class="_3" id= "class_3">
       <div class="container">
         <div class="companies2_inner _57">
@@ -859,7 +916,7 @@
               <div role="listitem" class="logos-item w-dyn-item">
                 <a
                   data-w-id="147ec68f-4fb9-cc59-21ac-9bd5f196fbec"
-                  href="./events"
+                  href="./events/"
                   class="logo-item-wrapper w-inline-block"
                   ><div class="logo-wrapper-upper">
                     <h3 class="heading-5">EMMELIA EVENTS</h3>
@@ -891,7 +948,7 @@
               <div role="listitem" class="logos-item w-dyn-item">
                 <a
                   data-w-id="147ec68f-4fb9-cc59-21ac-9bd5f196fbec"
-                  href="./hospitality"
+                  href="./hospitality/"
                   class="logo-item-wrapper w-inline-block"
                   ><div class="logo-wrapper-upper">
                     <h3 class="heading-5">EMMELIA STUDIOS</h3>
@@ -917,7 +974,7 @@
               <div role="listitem" class="logos-item w-dyn-item">
                 <a
                   data-w-id="147ec68f-4fb9-cc59-21ac-9bd5f196fbec"
-                  href="./hospitality"
+                  href="./hospitality/"
                   class="logo-item-wrapper w-inline-block"
                   ><div class="logo-wrapper-upper">
                     <h3 class="heading-5">EMMELIA ROOMS</h3>
@@ -941,7 +998,7 @@
               <div role="listitem" class="logos-item w-dyn-item">
                 <a
                   data-w-id="147ec68f-4fb9-cc59-21ac-9bd5f196fbec"
-                  href="./advertising"
+                  href="./advertising/"
                   class="logo-item-wrapper w-inline-block"
                   ><div class="logo-wrapper-upper">
                     <h4 class="heading-5">EMMELIA ADVERTISING</h4>
@@ -1083,7 +1140,7 @@
             <div role="listitem" class="logos-item w-dyn-item">
               <a
                 data-w-id="147ec68f-4fb9-cc59-21ac-9bd5f196fbec"
-                href="./hospitality"
+                href="./hospitality/"
                 class="logo-item-wrapper w-inline-block"
                 ><div class="logo-wrapper-upper">
                   <h3 class="heading-5">EMMELIA STUDIOS</h3>
@@ -1109,7 +1166,7 @@
             <div role="listitem" class="logos-item w-dyn-item">
               <a
                 data-w-id="147ec68f-4fb9-cc59-21ac-9bd5f196fbec"
-                href="./hospitality"
+                href="./hospitality/"
                 class="logo-item-wrapper w-inline-block"
                 ><div class="logo-wrapper-upper">
                   <h3 class="heading-5">EMMELIA ROOMS</h3>
@@ -1133,7 +1190,7 @@
             <div role="listitem" class="logos-item w-dyn-item">
               <a
                 data-w-id="147ec68f-4fb9-cc59-21ac-9bd5f196fbec"
-                href="./advertising"
+                href="./advertising/"
                 class="logo-item-wrapper w-inline-block"
                 ><div class="logo-wrapper-upper">
                   <h4 class="heading-5">EMMELIA ADVERTISING</h4>
