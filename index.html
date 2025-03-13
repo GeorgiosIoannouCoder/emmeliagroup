@@ -1746,19 +1746,19 @@
         sliderImages.forEach((img) => {
             img.style.width = "90vw"; // Ensures full width.
             img.style.maxWidth = "90vw"; // Prevents restrictions from parent divs.
-            img.style.objectFit = "cover"; // Ensures image fills container.
-    
-            if (window.innerWidth > 1644) {
-              img.style.height = "300px"; // Larger screens.
-          } else if (window.innerWidth > 1300) {
-              img.style.height = "250px"; // Medium screens.
-          }else if (window.innerWidth > 900) {
-            img.style.height = "320px"; // Medium screens.
-        } else if (window.innerWidth > 400) {
-          img.style.height = "300px"; // Medium screens.
-      }else {
-              img.style.height = "600px"; // Smaller screens.
-          }
+            //img.style.objectFit = "cover"; // Ensures image fills container.
+    //
+      //      if (window.innerWidth > 1644) {
+        //      img.style.height = "300px"; // Larger screens.
+          //} else if (window.innerWidth > 1300) {
+            //  img.style.height = "250px"; // Medium screens.
+          //}else if (window.innerWidth > 900) {
+            //img.style.height = "320px"; // Medium screens.
+        //} else if (window.innerWidth > 400) {
+          //img.style.height = "300px"; // Medium screens.
+      //}else {
+        //      img.style.height = "600px"; // Smaller screens.
+          //}
           img.style.height = "350px"
         });
     }
