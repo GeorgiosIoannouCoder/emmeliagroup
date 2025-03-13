@@ -1744,21 +1744,27 @@
         }
     
         sliderImages.forEach((img) => {
-            img.style.width = "90vw"; // Ensures full width.
-            img.style.maxWidth = "90vw"; // Prevents restrictions from parent divs.
-            //img.style.objectFit = "cover"; // Ensures image fills container.
-            if (window.innerWidth > 1644) { // Larger screens.
-              img.style.height = "650px";
-          } else if (window.innerWidth > 1300) { // Medium screens.
-              img.style.height = "550px";
-          }else if (window.innerWidth > 900) { // Medium screens.
-            img.style.height = "320px";
-        } else if (window.innerWidth > 400) { // Medium screens.
-          img.style.height = "250px";
-      }else {// Smaller screens.
-              img.style.height = "300px"; 
+          img.style.width = "90vw";
+          img.style.maxWidth = "90vw"; 
+          img.style.objectFit = "cover"; // Ensure all images fill the space without distortion
+          img.style.display = "block"; // Prevents extra spacing
+  
+          let newHeight;
+          if (window.innerWidth > 1644) {
+              newHeight = "650px"; 
+          } else if (window.innerWidth > 1300) {
+              newHeight = "550px"; 
+          } else if (window.innerWidth > 900) {
+              newHeight = "320px"; 
+          } else if (window.innerWidth > 400) {
+              newHeight = "250px"; 
+          } else {
+              newHeight = "300px"; 
           }
-        });
+  
+          img.style.height = newHeight;
+          img.style.maxHeight = newHeight; // Ensures images don’t exceed this height
+      });  
     }
 
       // Call function initially.
@@ -1793,9 +1799,8 @@
     
     // Run function initially and on window resize
     adjustDivHeight();
-    window.addEventListener("resize", adjustDivHeight);
     window.addEventListener("load", adjustDivHeight);
-    
+    //window.addEventListener("resize", adjustDivHeight);
     </script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
