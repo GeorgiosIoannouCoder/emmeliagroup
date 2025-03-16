@@ -608,14 +608,14 @@
             href="./events/"
             class="logo-all w-button"
             style="padding: 2.5%;"
-            >events</a
+            >events<span class="arrow-3" style="margin-left: 5px; color:black">↗</span></a
           > <a
           fs-cmsfilter-element="clear"
           data-w-id="d89a5952-92d7-265c-f139-968092efa544"
           href="./hospitality/"
           class="logo-all w-button"
           style="padding: 2.5%;"
-          >hospitality</a
+          >hospitality<span class="arrow-3" style="margin-left: 5px; color:black">↗</span></a
         >
         <a
         fs-cmsfilter-element="clear"
@@ -623,7 +623,7 @@
         href="./advertising/"
         class="logo-all w-button"
         style="padding: 2.5%;"
-        >advertising</a
+        >advertising<span class="arrow-3" style="margin-left: 5px; color:black">↗</span></a
       >
         </form>
         <div class="w-form-done">
@@ -642,7 +642,7 @@
       }
     
       /* Show the mobile-only-companies-buttons only on mobile screens. */
-      @media (max-width: 768px) {
+      @media (max-width: 500px) {
         #mobile-only-companies-buttons {
           display: block;
         }
@@ -732,8 +732,10 @@
                         src="./images/events/heart_proposal.jpg"
                         class="image-6"
                       />
+                      <a href="./events/" class="slider-button" style="margin-bottom: 60px;" >EVENTS</a>
                       <a href="./events/" class="slider-button" >A Heart Wedding Proposal to impress your beloved<span class="arrow-3" style="margin-left: 5px; color:black">↗</span></a>
                     </div>
+                    
                     <div role="listitem" class="w-dyn-item">
                       <img
                         id="sliderImage"
@@ -742,6 +744,7 @@
                         src="./images/events/wedding.jpg"
                         class="image-6"
                       />
+                      <a href="./events/" class="slider-button" style="margin-bottom: 60px;" >EVENTS</a>
                       <a href="./events/" class="slider-button" >A Wedding Arch to celebrate unforgetable moments<span class="arrow-3" style="margin-left: 5px; color:black">↗</span></a>
                     </div>
                     <div role="listitem" class="w-dyn-item">
@@ -752,6 +755,7 @@
                         src="./images/hospitality/emmelia_rooms.png"
                         class="image-6"
                       />
+                      <a href="./events/" class="slider-button" style="margin-bottom: 60px;" >HOSPITALITY</a>
                       <a href="./hospitality/" class="slider-button" >Condo Hotel with Rooms designed to relax<span class="arrow-3" style="margin-left: 5px; color:black">↗</span></a>
                     </div>
                     <div role="listitem" class="w-dyn-item">
@@ -762,6 +766,7 @@
                         src="./images/hospitality/emmelia_studios.png"
                         class="image-6"
                       />
+                      <a href="./events/" class="slider-button" style="margin-bottom: 60px;" >HOSPITALITY</a>
                       <a href="./hospitality/" class="slider-button" >Studios offering awesome short-term accomondation<span class="arrow-3" style="margin-left: 5px; color:black">↗</span></a>
                     </div>
                     <div role="listitem" class="w-dyn-item">
@@ -772,6 +777,7 @@
                         src="./images/advertising/led_screen.png"
                         class="image-6"
                       />
+                      <a href="./events/" class="slider-button" style="margin-bottom: 60px;" >ADVERTISING</a>
                       <a href="./advertising/" class="slider-button" >Digital Advertising in the heart of Paphos<span class="arrow-3" style="margin-left: 5px; color:black">↗</span></a>
                     </div>
                   </div>
@@ -786,7 +792,7 @@
       /* Styles for the transparent, rounded button */
       .slider-button {
           position: absolute;
-          bottom: 10%;
+          bottom: 5%;
           left: 50%;
           transform: translateX(-50%);
           color: white;
@@ -795,7 +801,7 @@
           border-radius: 50px;
           text-decoration: none;
           display: inline-block;
-          border: 1.3px solid white; /* White border */
+          border: 1.3px solid black; /* White border */
           transition: all 0.3s ease-in-out;
           background: rgba(0, 0, 0, 0.2);
           /*background: transparent; */
