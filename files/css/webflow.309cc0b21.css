@@ -2483,6 +2483,8 @@ strong {
   position: fixed;
 }
 
+/* Circular border: */
+/*
 .cursor-2 {
   background-color: #fff0;
   border: 0.0625rem solid #fff;
@@ -2493,7 +2495,18 @@ strong {
   height: 2.5rem;
   display: flex;
 }
+*/
 
+/* Logo: */
+.cursor-dot {
+  width: 3.0rem;
+  height: 3.0rem;
+  filter: invert(1);
+  background: url("../../images/logos/emmelia_logo.svg") center/contain no-repeat;
+}
+
+/* Dot: */
+/*
 .cursor-dot {
   background-color: #fff;
   border-radius: 31.25rem;
@@ -2503,6 +2516,7 @@ strong {
   height: 0.5rem;
   display: flex;
 }
+*/
 
 .email-holder {
   color: #000;
