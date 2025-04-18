@@ -2499,8 +2499,8 @@ strong {
 
 /* Logo: */
 .cursor-dot {
-  width: 3.0rem;
-  height: 3.0rem;
+  width: 2.0rem;
+  height: 2.0rem;
   filter: invert(1);
   background: url("../../images/logos/emmelia_logo.svg") center/contain no-repeat;
 }
