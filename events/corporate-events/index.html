@@ -2291,6 +2291,13 @@
           display: block;
           margin-inline: auto; /* centre inside the slide */
         }
+
+        /* centre the entire grid cell on big screens */
+        ._5_inner .grid-left {
+          justify-self: center !important; /* works when the parent is a CSS‑grid */
+          display: flex !important; /* fallback if Webflow switches it to flex */
+          justify-content: center !important;
+        }
       }
     </style>
   </body>
