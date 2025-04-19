@@ -2651,5 +2651,25 @@
       window.addEventListener("load", adjustMarginTop);
       //window.addEventListener("resize", adjustMarginTop);
     </script>
+    <style>
+      /* ---------- desktop / laptop overrides ---------- */
+      @media (min-width: 992px) {
+        /* slider wrapper */
+        .slider.w-slider {
+          width: 40vw !important;
+          max-width: 40vw !important;
+          margin-inline: auto; /* centre the whole slider */
+          height: auto !important; /* let the wrapper grow */
+        }
+
+        /* slide images */
+        .image-6 {
+          width: 40vw !important;
+          max-width: 40vw !important;
+          display: block;
+          margin-inline: auto; /* centre inside the slide */
+        }
+      }
+    </style>
   </body>
 </html>
