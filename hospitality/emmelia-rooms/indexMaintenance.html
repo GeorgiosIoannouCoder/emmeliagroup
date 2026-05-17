@@ -8,15 +8,37 @@
 >
   <head>
     <meta charset="utf-8" />
-    <title>Page under maintenance &#9679; Emmelia Group</title>
-    <meta content="404" property="og:title" />
-    <meta content="../images/logos/emmelia_logo.svg" property="og:image" />
-    <meta content="404" property="twitter:title" />
-    <meta content="../images/logos/emmelia_logo.svg" property="twitter:image" />
+    <title>
+      Emmelia Rooms &#9679; Under maintenance &#9679; Emmelia Group
+    </title>
+    <meta
+      content="Emmelia Rooms under maintenance"
+      property="og:title"
+    />
+    <meta
+      content="../../images/logos/emmelia_logo.svg"
+      property="og:image"
+    />
+    <meta
+      content="Our Emmelia Rooms pages are briefly being updated. We'll be back shortly."
+      property="og:description"
+    />
+    <meta
+      content="Emmelia Rooms under maintenance"
+      property="twitter:title"
+    />
+    <meta
+      content="../../images/logos/emmelia_logo.svg"
+      property="twitter:image"
+    />
+    <meta
+      content="Our Emmelia Rooms pages are briefly being updated. We'll be back shortly."
+      property="twitter:description"
+    />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
     <link
-      href="../files/css/webflow.309cc0b21.css"
+      href="../../files/css/webflow.309cc0b21.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -46,14 +68,14 @@
       })(window, document);
     </script>
     <link
-      href="../images/logos/emmelia_logo.svg"
+      href="../../images/logos/emmelia_logo.svg"
       rel="shortcut icon"
       type="image/x-icon"
     />
-    <link href="./images/logos/emmelia_logo.svg" rel="apple-touch-icon" />
-    <style>
-      cursor: none; !important;
-    </style>
+    <link
+      href="../../images/logos/emmelia_logo.svg"
+      rel="apple-touch-icon"
+    />
     <!-- [Attributes by Finsweet] CMS Slider -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
@@ -91,6 +113,123 @@
 
       .custom-word em {
         font-style: italic;
+      }
+
+      .status-page {
+        min-height: calc(100vh - 220px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 1.5rem;
+        text-align: center;
+      }
+
+      .status-page_inner {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      .status-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 92px;
+        height: 92px;
+        border: 1.5px solid #1a1a1a;
+        border-radius: 999px;
+        margin: 0 auto 2rem;
+        color: #1a1a1a;
+      }
+
+      .status-icon svg {
+        width: 38px;
+        height: 38px;
+        animation: status-spin 8s linear infinite;
+      }
+
+      @keyframes status-spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .status-eyebrow {
+        font-family: "Inter", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: #7a7a7a;
+        margin: 0 0 1.25rem;
+      }
+
+      .status-title {
+        font-family: "Inter", sans-serif;
+        font-size: clamp(2.25rem, 5vw, 3.75rem);
+        font-weight: 600;
+        color: #1a1a1a;
+        margin: 0 0 1.25rem;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+
+      .status-message {
+        font-family: "Inter", sans-serif;
+        font-size: 1.0625rem;
+        line-height: 1.55;
+        color: #5a5a5a;
+        max-width: 520px;
+        margin: 0 auto 2.5rem;
+      }
+
+      .status-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem 2.25rem;
+        background: #1a1a1a;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        transition: transform 0.25s ease, background 0.25s ease;
+      }
+
+      .status-cta:hover {
+        background: #000;
+        transform: translateY(-2px);
+      }
+
+      .status-cta-arrow {
+        transition: transform 0.25s ease;
+      }
+
+      .status-cta:hover .status-cta-arrow {
+        transform: translateX(4px);
+      }
+
+      @media (max-width: 640px) {
+        .status-page {
+          min-height: calc(100vh - 140px);
+          padding: 4rem 1.25rem;
+        }
+
+        .status-icon {
+          width: 78px;
+          height: 78px;
+        }
+
+        .status-icon svg {
+          width: 32px;
+          height: 32px;
+        }
       }
     </style>
 
@@ -151,7 +290,7 @@
             href="/"
             class="logo-wrapper w-inline-block"
             ><img
-              src="../images/logos/emmelia_group.svg"
+              src="../../images/logos/emmelia_group.svg"
               loading="lazy"
               width="300px"
               alt=""
@@ -166,23 +305,23 @@
             >
             <a
               data-w-id="c99a1923-a9da-acc6-01d0-46fa4b3ba93c"
-              href="../about/"
+              href="../../about/"
               aria-current="page"
               class="link w--current"
               >about</a
             ><a
               data-w-id="c99a1923-a9da-acc6-01d0-46fa4b3ba93e"
-              href="../events/"
+              href="../../events/"
               class="link"
               >events</a
             ><a
               data-w-id="c99a1923-a9da-acc6-01d0-46fa4b3ba940"
-              href="../hospitality/"
+              href="../../hospitality/"
               class="link"
               >hospitality</a
             ><a
               data-w-id="c99a1923-a9da-acc6-01d0-46fa4b3ba942"
-              href="../advertising/"
+              href="../../advertising/"
               class="link"
               >advertising</a
             >
@@ -213,7 +352,7 @@
               href="/"
               class="menu-logo w-inline-block"
               ><img
-                src="../images/logos/emmelia_group.svg"
+                src="../../images/logos/emmelia_group.svg"
                 loading="lazy"
                 width="300px"
                 alt=""
@@ -271,23 +410,23 @@
               >
               <a
                 data-w-id="3d30b546-e732-2a89-c6bb-bc8d1a4af38f"
-                href="../about/"
+                href="../../about/"
                 aria-current="page"
                 class="link-2 w--current"
                 >about</a
               ><a
                 data-w-id="3d30b546-e732-2a89-c6bb-bc8d1a4af391"
-                href="../events/"
+                href="../../events/"
                 class="link-2"
                 >events</a
               ><a
                 data-w-id="3d30b546-e732-2a89-c6bb-bc8d1a4af393"
-                href="../hospitality/"
+                href="../../hospitality/"
                 class="link-2"
                 >hospitality</a
               ><a
                 data-w-id="3d30b546-e732-2a89-c6bb-bc8d1a4af395"
-                href="../advertising/"
+                href="../../advertising/"
                 class="link-2"
                 >advertising</a
               >
@@ -572,49 +711,55 @@
         </div>
       </div>
     </div>
-    <div class="_2 nomarg" style="padding: 1%">
-      <div class="container">
-        <div class="_2_inner nomarg">
-          <div class="_2-upper">
-            <div class="headline">
-              <h2
-                text-split=""
-                letters-fade-in=""
-                class="h2"
-                style="text-align: center"
-              >
-                <b>PAGE UNDER MAINTENANCE!</b>
-              </h2>
-            </div>
-          </div>
-          <div
-            class="_3-about"
-            style="
-              margin-top: 3rem;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 150px;
-              text-align: center;
-              background-color: #eee;
-              border-radius: 20px;
-            "
+    <section class="status-page">
+      <div class="status-page_inner">
+        <div class="status-icon" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <div class="_3about_inner" style="padding: 10px">
-              <h2 class="heading-10" style="margin: 0">
-                <span class="h1" style="color: #505050; display: block">
-                  <b>Oops! Please come back soon!</b>
-                </span>
-                <br />
-                <a href="/" style="color: black; text-decoration: none"
-                  ><b>Click to go back to Home!</b></a
-                >
-              </h2>
-            </div>
-          </div>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.213-1.281Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+          </svg>
         </div>
+        <p class="status-eyebrow">Under Maintenance</p>
+        <h1 class="status-title">Refreshing your room</h1>
+        <p class="status-message">
+          Our Emmelia Rooms pages are briefly being polished behind the
+          scenes. Please check back shortly. Thank you for your patience!
+        </p>
+        <a href="/" class="status-cta">
+          <span>Back to home</span>
+          <svg
+            class="status-cta-arrow"
+            width="20"
+            height="14"
+            viewBox="0 0 20 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M13 1L19 7L13 13M19 7H1"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="square"
+            />
+          </svg>
+        </a>
       </div>
-    </div>
+    </section>
     <div id="cookieBanner" fs-cc="banner" class="cookie">
       <div class="container">
         <div class="cookie_inner">
@@ -653,23 +798,23 @@
                 >
                 <a
                   data-w-id="51a48ec3-62c1-81b8-600e-dd2b1f89ef62"
-                  href="../about/"
+                  href="../../about/"
                   aria-current="page"
                   class="link-footer w--current"
                   >about</a
                 ><a
                   data-w-id="51a48ec3-62c1-81b8-600e-dd2b1f89ef64"
-                  href="../events/"
+                  href="../../events/"
                   class="link-footer"
                   >events</a
                 ><a
                   data-w-id="51a48ec3-62c1-81b8-600e-dd2b1f89ef66"
-                  href="../hospitality/"
+                  href="../../hospitality/"
                   class="link-footer"
                   >hospitality</a
                 ><a
                   data-w-id="51a48ec3-62c1-81b8-600e-dd2b1f89ef68"
-                  href="../advertising/"
+                  href="../../advertising/"
                   class="link-footer"
                   >advertising</a
                 >
@@ -820,7 +965,7 @@
                 href="/"
                 class="link-block-2 w-inline-block"
                 ><img
-                  src="../images/logos/emmelia_logo.svg"
+                  src="../../images/logos/emmelia_logo.svg"
                   loading="lazy"
                   alt=""
                   class="image-8"
@@ -833,7 +978,7 @@
             <div class="f-l-r">
               <a
                 data-w-id="51a48ec3-62c1-81b8-600e-dd2b1f89ef8c"
-                href="./privacy-policy/"
+                href="../../privacy-policy/"
                 class="footer-link"
                 >Privacy Policy</a
               >
